@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>study</title>
+</head>
+<body>
+<div style="text-align: center;margin-top: 50px; margin-bottom: 10px;font-size: 22px">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style = "border-collapse:separate; border-spacing:20px;" >
+        <tbody >
+
+            <tr th:each="rapid:${rapidList}">
+                <td th:text="${rapid.row[0]}" ></td>
+                <td th:text="${rapid.row[1]}" ></td>
+                <td th:text="${rapid.row[2]}" ></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
